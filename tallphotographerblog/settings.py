@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import os
 import dj_database_url
+
+
 if os.path.isfile('env.py'):
     import env
 
@@ -29,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = bool(os.environ.get('DEBUG'))
 
-ALLOWED_HOSTS = ["tallphotoblog-django-626048af075d.herokuapp.com", "localhost"]
+ALLOWED_HOSTS = ["tallphotoblog-django-626048af075d.herokuapp.com", "localhost", "127.0.0.1"]
 
 
 # Application definition
@@ -43,6 +45,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+    'django_summernote',
     'tallphotoblog',
 ]
 
