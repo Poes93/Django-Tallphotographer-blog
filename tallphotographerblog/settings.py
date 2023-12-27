@@ -27,9 +27,9 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, "templates")
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = bool(os.environ.get('DEBUG'))
 
-ALLOWED_HOSTS = ["tallphotoblog-django.herokuapp.com", "localhost"]
+ALLOWED_HOSTS = ["tallphotoblog-django-626048af075d.herokuapp.com", "localhost"]
 
 
 # Application definition
