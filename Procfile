@@ -1,1 +1,1 @@
-web: gunicorn http://tallphotoblog-django.herokuapp.com.wsgi
+web: gunicorn tallphotoblog.wsgi
