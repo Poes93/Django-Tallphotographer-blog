@@ -1,1 +1,1 @@
-web: gunicorn tallphotoblog.wsgi
+web: gunicorn tallphotographblog.wsgi
